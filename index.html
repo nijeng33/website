@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nijen Giri - Personal Website</title>
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header / Hero Section */
+    header {
+      background: linear-gradient(135deg, #2d89ef, #1b5cb8);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      opacity: 0.9;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2d89ef;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1b5cb8;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #2d89ef;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      gap: 20px;
+    }
+
+    .skill {
+      margin-bottom: 10px;
+    }
+
+    .skill span {
+      font-weight: bold;
+    }
+
+    .progress {
+      background: #e4e7eb;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+
+    .progress-bar {
+      height: 12px;
+      background: #2d89ef;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* Contact Form */
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button {
+      padding: 12px;
+      background: #2d89ef;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #1b5cb8;
+    }
+
+    /* Footer */
+    footer {
+      background: #2d89ef;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nijen Giri</h1>
+    <p>Passionate about technology, coding, and creativity 🚀</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hello! I’m <strong>Nijen Giri</strong>, a technology enthusiast with a passion for problem-solving, coding, and exploring creative ideas. I enjoy working on web projects, learning new programming concepts, and building things that can make life easier. This website is my digital space to showcase my work and journey.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <div class="skill">
+        <span>HTML & CSS</span>
+        <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress"><div class="progress-bar" style="width: 75%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>C / C++</span>
+        <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>Problem Solving</span>
+        <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Personal Website</h3>
+        <p>A modern, flat-design portfolio website built with HTML & CSS.</p>
+      </div>
+      <div class="card">
+        <h3>Store Record System</h3>
+        <p>A C program to manage products with add, delete, update, and search features.</p>
+      </div>
+      <div class="card">
+        <h3>Coming Soon</h3>
+        <p>More exciting projects will be added here 🚀</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nijen Giri | Designed with ❤️</p>
+    <p>Email: <a href="mailto:nijen.giri@example.com">nijen.giri@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/nijen-giri</a></p>
+  </footer>
+
+  <script>
+    // Animate skill bars on scroll
+    const progressBars = document.querySelectorAll('.progress-bar');
+    const options = { threshold: 0.5 };
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.width = entry.target.getAttribute('style').split(':')[1];
+        }
+      });
+    }, options);
+    progressBars.forEach(bar => observer.observe(bar));
+  </script>
+
+</body>
+</html>
